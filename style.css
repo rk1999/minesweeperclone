@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  height: 440px;
+  width: 440px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(228, 201, 167, 0.705);
+}
+
+.checked {
+  background-color: rgba(167, 144, 116, 0.685) !important;
+}
+
+.grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 42px;
+  font-size: 2rem;
+  background-color: rgba(228, 201, 167, 1);
+  border: 1px solid white;
+}
+
+.gameOver {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameStatus {
+	margin: 1rem;
+	color: #888;
+}
+
+.gameButton {
+	padding: 0.5rem 2rem;
+	color: #888;
+	background: linear-gradient(120deg, #ffc95f, #9cfc52);
+	border-radius: 10%;
+	border: 1px solid blue;
+	cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
